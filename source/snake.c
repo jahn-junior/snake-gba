@@ -129,7 +129,7 @@ int main(void) {
     if (player_x >= target_x - target_width && player_x <= target_x + target_width &&
 	player_y >= target_y - target_height && player_y <= target_y + target_height)
     {
-      target_x = nextInt(SCREEN_WIDTH + target_height);
+      target_x = nextInt(SCREEN_WIDTH - target_width);
       target_y = nextInt(SCREEN_HEIGHT - target_height);
       set_object_position(target_attrs, target_x, target_y);
       score++;
